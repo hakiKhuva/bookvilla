@@ -20,3 +20,4 @@ Functions in this project:
     - Modify users data
     - Show submitted contact forms
 
+Create database and tables before running the website, schema for this present in `bookvilla/table_schema.sql` file
