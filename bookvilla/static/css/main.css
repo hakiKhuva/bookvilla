@@ -1,0 +1,259 @@
+:root {
+    --fg: #222;
+    --bg: #fff;
+    --font: 'Josefin Sans', times;
+    --font-normal: 'baloo 2', serif;
+}
+
+
+body {
+    font-family: var(--font-normal);
+    color: var(--fg);
+    background-color: var(--bg);
+}
+
+#main-container {
+    margin: 80px auto;
+    /* min-height: 90vh; */
+    padding-bottom: 50px;
+}
+
+#inner-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.link {
+    color: var(--fg);
+    font-size: 15.5px;
+}
+
+.message-main {
+    font-size: 15.5px;
+    border: 0px;
+}
+
+.message-main > .warn {
+    border:2px solid rgba(179, 0, 0,0.9);
+    border-radius: 3px;
+    color: rgba(179, 0, 0,0.9);
+    padding: 13px 10px;
+}
+
+/*  */
+
+.form {
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    width: 350px;
+    margin: 25px auto;
+    border-radius: 2.5px;
+    box-shadow: 0px 0px 2px 0px #fff;
+    max-width: calc( 100% - 100px);
+}
+
+.form .header {
+    font-size: 45px;
+    margin: 30px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form .label {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.form .label > label {
+    font-size: 16.2px;
+    margin: 3.5px 0px;
+}
+
+.form .label > input {
+    font-size: 17px;
+    font-family: var(--font);
+    padding: 12.5px 15px;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    /* width: 300px; */
+    width: 100%;
+    max-width: 90%;
+}
+
+.form .label > small {
+    font-size: 14px;
+    margin: 5.5px 0px;
+}
+
+.form .label > small:empty {
+    margin: 0px;
+}
+
+.form button[type="submit"], .button {
+    width: 100%;
+    padding: 12.5px;
+    font-family: var(--font);
+    font-size: 16.5px;
+    font-weight: bold;
+    margin: 12.5px auto;
+    background-color: rgb(121, 26, 0);
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+}
+
+form .form-act {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 20px;
+}
+
+@media (max-width:600px) {
+    .form {
+        padding: 50px 35px;
+        max-width: calc( 100% - 70px);
+    }
+}
+
+.abnormal-message , .normal-message {
+    border: 2px solid red;
+    background-color: transparent;
+    color: red;
+    padding: 12.5px;
+    border-radius: 3px;
+    margin: 10px auto;
+    max-width: 850px;
+}
+
+.normal-message {
+    border-color: green;
+    color: green;
+}
+
+a.a-link {
+    font-size: 15.5px;
+    color: var(--fg);
+    margin: 10px;
+}
+
+div.header, .header-b {
+    font-size: 25px;
+}
+
+.header-b {
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+form.form-w {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* width: 350px; */
+    padding: 25px;
+    max-width: calc( 100% - 50px );
+    /* border: 1px solid #000; */
+}
+
+form.form-w > .header {
+    margin: 25px 0px;
+}
+
+form.form-w > .label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+form.form-w > .label > label {
+    font-size: 15.5px;
+}
+
+form.form-w > .label > input , form.form-w > .label > .input {
+    font-size: 15px;
+    padding: 10px;
+    font-family: var(--font);
+    border: 1px solid var(--fg);
+}
+
+form.form-w > button {
+    font-size: 16.5px;
+    background-color: var(--bg);
+    color: var(--fg);
+    padding: 10px;
+    margin: 10px 0px;
+    border: 2px solid var(--fg);
+    font-family: var(--font);
+}
+
+.navbar-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: max-content;
+    max-width: calc(100% - 30px);
+    margin: auto;
+}
+
+.navbar-inner > div {
+    margin: 10px 15px;
+}
+
+.navbar-inner > div > a {
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar-inner > div.underline {
+    border-bottom: 3px solid var(--fg);
+}
+
+.full-center-page {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 650px;
+    margin: auto;
+}
+
+.full-center-page > .header {
+    font-size: calc( 50px + 1.5vw );
+    font-weight: bold;
+    margin: 25px 0px;
+}
+
+.full-center-page > .description {
+    font-size: 20.5px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.full-center-page > .description:first-of-type {
+    margin-top: 0px;
+}
+
+.full-center-page > .description:last-of-type {
+    margin-bottom: 0px;
+}
+
+.select-form {
+    width: max-content;
+}
+
+.select-form > select.round {
+    border: 2px solid var(--fg);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: var(--font-normal);
+}
+
+select {
+    background-color: var(--bg);
+    color: var(--fg);
+}

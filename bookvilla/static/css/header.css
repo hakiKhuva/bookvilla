@@ -1,0 +1,25 @@
+.main-header {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    font-family: var(--font);
+    /* padding: 15px; */
+    font-size: 19.5px;
+    box-shadow: 0px 0px 2px 0px var(--fg);
+    background-color: var(--bg);
+    text-align: center;
+    font-weight: bold;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header > div {
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

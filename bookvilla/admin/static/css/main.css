@@ -1,0 +1,186 @@
+:root {
+    --font : "Josefin Sans", 'Trebuchet MS';
+    --font-norm : "Baloo 2", 'Trebuchet MS';
+    --fg : #333;
+    --bg : #fff;
+}
+
+#main-container * {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-norm);
+}
+
+#main-header {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    font-family: var(--font) !important;
+    box-shadow: 0px 0px 1px 0px var(--fg);
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
+#main-header > div {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#main-header > div > .header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main-header nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main-header nav > a {
+    display: block;
+    color: var(--fg);
+    margin: 5px 15px;
+    font-size: 16.5px;
+    text-decoration: none;
+    border: 2px solid var(--fg);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#main-container {
+    margin-top: 100px;
+    max-width: 1250px;
+    margin: auto;
+    margin-top: 100px ;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cards > .card {
+    border: 2px solid var(--fg);
+    border-left: 5px solid var(--fg);
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin: 25px;
+}
+
+.cards > .card > .name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cards > .card > .value {
+    font-size: 20.5px;
+    text-align: right;
+}
+
+.graph-container {
+    margin: 50px auto;
+    max-width: 100%;
+    width: 650px;
+}
+
+.graph-container > .header {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+
+table, tr, td, th {
+    border: 1px solid var(--fg);
+    padding: 20px;
+    border-collapse: collapse;
+    font-weight: normal;
+}
+
+th {
+    font-weight: bold;
+}
+
+.mini-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.mini-form > .label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.mini-form > .label > label {
+    font-size: 15px;
+    margin: 2.5px 0px;
+}
+
+.mini-form > .label > input, .mini-form > .label > select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid var(--fg);
+}
+
+.mini-form button {
+    font-size: 16.5px;
+    padding: 10px 30px;
+    border: 1px solid var(--fg);
+    margin-top: 10px;
+}
+
+.options {
+    margin: 25px 0px;
+}
+
+#messages-flashs {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 500px;
+    box-shadow: 0px 0px 20000px 10px var(--fg);
+    border: 5px solid var(--fg);
+    padding: 50px;
+    background-color: var(--bg);
+}
+
+#messages-flashs > .header {
+    font-weight: bold;
+    font-family: var(--font);
+}
+
+.link-form, .link-form > button[type="submit"] {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #ccc;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: calc( 100% - 30px );
+    padding: 15px;
+    text-align: right;
+    font-size: 15.5px;
+}

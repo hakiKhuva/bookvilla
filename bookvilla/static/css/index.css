@@ -1,0 +1,82 @@
+body {
+    background: url("../images/bookBg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+    background-blend-mode: darken;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.70);
+    font-family: var(--font);
+}
+
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: max-content;
+    /* margin: auto; */
+}
+
+.tag-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 100px;
+    max-width: max-content;
+}
+
+.tag-card .tagLine {
+    font-size: 100px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 25px;
+}
+
+.tag-card .tagLine-desc {
+    font-size: 20px;
+    word-wrap: break-word;
+    padding: 20px;
+}
+
+
+.link-continue {
+    max-width: 250px;
+    display: flex;
+}
+
+.link-continue > a {
+    font-size: 17.5px;
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-family: var(--font);
+    margin: 30px auto;
+    border: 2px solid #fff;
+    border-width: 0px 0px 2px 0px;
+    transition: 300ms;
+    text-decoration: none;
+}
+
+.link-continue > a:hover {
+    border-width: 1px 1px 7.5px 1px;
+    transform: translateY(-10px);
+    margin-top: 25px;
+    background-color: #fff;
+    color: #222;
+    border-color: #222;
+}
+
+@media (max-width:500px) {
+    .tag-card .tagLine {
+        padding: 10px;
+        font-size: 20vw;
+    }
+
+    .tag-card .tagLine-desc {
+        font-size: calc( 16.5px + 0.5vw );
+    }
+}

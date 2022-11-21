@@ -1,0 +1,39 @@
+#popups {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    margin-left: 10px;
+    z-index: 100;
+    width: 400px;
+    max-width: calc( 100% - 10px );
+}
+
+.popup {
+    box-shadow: 5px 5px 0px 4px var(--fg);
+    border: 1px solid var(--fg);
+    z-index: 100;
+    padding: 25px;
+    background-color: var(--bg);
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+
+.popup .content {
+    font-size: 19.5px;
+    line-height: 25px;
+    margin: 10px 0px;
+}
+
+.popup .small {
+    font-size: 16.5px;
+}
+
+.right {
+    text-align: right;
+}
+
+.popup a {
+    font-size: 17px;
+}

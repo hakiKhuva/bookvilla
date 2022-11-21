@@ -1,0 +1,37 @@
+#main-container {
+    min-height: auto !important;
+}
+
+#home #not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+}
+
+#home #not-found svg {
+    width: 150px;
+    margin: 25px auto;
+}
+
+.btn-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-cont > p {
+    font-size: 20px;
+}
+
+.btn-cont > a {
+    border: 2px solid var(--fg);
+    color: var(--fg);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+}

@@ -1,0 +1,211 @@
+.books-colls {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.books-colls .book {
+    width: 250px;
+    max-width: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: center; */
+    box-shadow: 0px 0px 2px 0px var(--fg);
+    margin: 25px 15px;
+    text-decoration: none;
+    color: var(--fg);
+}
+
+.books-colls .book > .book-image {
+    width: 250px;
+    max-width: 250px;
+    height: 325px;
+    max-height: 325px;
+}
+
+.books-colls .book > .book-image > img {
+    width: 250px;
+    max-width: 250px;
+    height: 325px;
+    max-height: 325px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.books-colls .book > .book-details {
+    margin: 10px;
+}
+
+.books-colls .book > .book-details > div {
+    font-size: 20.5px;
+    font-weight: bolder;
+    max-width: 250px;
+}
+
+.books-colls .book > .book-details > div:nth-child(2) {
+    margin: 2.5px 0px;
+    font-size: 15.5px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#book {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+#book > #book-image {
+    width: 312.5px;
+    /* height: 406.5px; */
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#book > #book-image > img {
+    width: 312.5px;
+    height: 406.5px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+#book > #details {
+    margin: 0px 25px;
+    max-width: 650px;
+}
+
+#book > #details > div > span {
+    display: block;
+}
+
+#book > #details > div#name {
+    font-size: 42.5px;
+    font-weight: bold;
+}
+
+#book > #details > div#author {
+    font-size: 18.5px;
+}
+
+#book > #details > table#other-details {
+    margin: 25px 0px;
+}
+
+#book > #details > table#other-details td {
+    padding: 5px 20px;
+}
+
+#book > #details > table#other-details,
+#book > #details > table#other-details td:first-of-type {
+    padding-left: 0px;
+    font-size: 16.5px;
+}
+
+#book > #details > #description {
+    line-height: 30px;
+    font-size: 17px;
+    margin: 50px auto;
+}
+
+#book > #details > #description > .content {
+    border-bottom: 2px solid var(--fg);
+}
+
+#book .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#book .buttons .button {
+    width: 250px;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+.delete-form {
+    margin: 0px;
+    width: 250px;
+}
+
+.delete-form > button {
+    margin: 0px;
+    font-size: 15.5px;
+    background-color: var(--bg);
+    color: var(--fg);
+    border: 0px;
+    border-top: 1px solid var(--fg);
+    border-bottom: 0.5px solid var(--fg);
+    padding: 10px;
+    font-family: var(--font-normal);
+    width: 100%;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.delete-form > button:hover {
+    transition: 250ms;
+    border-bottom: 5px solid var(--fg);
+    transform: translateY(-5px);
+    margin-bottom: -5px;
+}
+
+#read-more {
+    background-color: var(--bg);
+    color: var(--fg);
+    padding: 10px 20px;
+    border: 2px solid var(--fg);
+    margin: 20px 0px;
+    font-size: 15.5px;
+    font-family: var(--font);
+}
+
+@media (max-width:1050px) {
+    #book > #book-image {
+        width: 352.5px;
+        max-width: 100%;
+        /* height: 446.5px; */
+        border-right: 0px;
+    }
+
+    #book > #book-image > img {
+        width: 352.5px;
+        height: 446.5px;
+        max-width: 90%;
+    }
+
+    #book {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #book > #details {
+        margin: 25px 0px;
+        padding: 20px;
+        border-top: 5px solid var(--fg);
+    }
+
+    .book-btn {
+        max-width: 65vw;
+        padding: 15px 10px;
+        margin: 10px 2px !important;
+    }
+
+    .book-form-btn {
+        padding: 0px;
+        margin: 0px !important;
+    }
+}

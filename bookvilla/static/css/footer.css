@@ -1,0 +1,75 @@
+footer {
+    background-color: var(--bg);
+    padding: 25px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    box-shadow: 0px -1px 1px 0px rgba(50, 50, 50, 0.5);
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+
+footer .link-coll {
+    margin: 15px 20px;
+}
+
+footer .link-coll > .name {
+    font-size: 18.5px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+footer .link-coll {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .link-coll > a {
+    color: var(--fg);
+    text-decoration: none;
+    margin: 5px 0px;
+    font-size: 16px;
+}
+
+footer .footer-desc {
+    margin-top: 25px;
+    /* align-self: flex-end; */
+}
+
+footer .footer-desc > .name {
+    font-size: 25px;
+    margin: 5px 0px;
+    font-weight: bold;
+}
+
+footer .footer-desc > .desc {
+    margin: 5px 0px;
+    font-size: 13.5px;
+}
+
+@media (max-width:650px){
+    footer > div {
+        flex-direction: column;
+    }
+
+    footer .link-coll {
+        margin: 15px 0px;
+    }
+
+    footer .footer-desc {
+        align-self: flex-start;
+    }
+
+}

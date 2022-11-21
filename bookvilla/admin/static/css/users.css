@@ -1,0 +1,9 @@
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.options > * {
+    margin: 20px;
+}

@@ -1,0 +1,64 @@
+.c-forms-colls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-form {
+    box-shadow: 0px 0px 2px 0px var(--fg);
+    width: 450px;
+    max-width: calc( 100% - 50px );
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px;
+}
+
+.cont-form > * {
+    box-shadow: 0px 0px 1px 0px var(--fg);
+    padding: 10px;
+}
+
+.cont-form > .id {
+    box-shadow: 0px 0px 0px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cont-form > .name {
+    font-size: 16px;
+}
+
+.cont-form > .email {
+    font-size: 16.5px;
+}
+
+.cont-form > .subject {
+    font-size: 15.5px;
+}
+
+.cont-form > .message {
+    font-size: 14.5px;
+    word-break: break-all;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.cont-form > .dt-tm {
+    font-size: 13.5px;
+    margin: 25px 0px;
+}
+
+.cont-form > form > button {
+    margin: 0px;
+    cursor: pointer;
+}
+
+.cont-form > .message::-webkit-scrollbar {
+    width: 5px;
+}
+.cont-form > .message::-webkit-scrollbar-thumb {
+    background-color: var(--fg);
+}

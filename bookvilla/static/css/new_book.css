@@ -1,0 +1,36 @@
+.book-form {
+}
+
+.book-form .header {
+    text-align: center;
+}
+
+.book-form {
+    width: 650px !important;
+    margin: auto;
+}
+
+.book-form input {
+    font-size: 16.5px !important;
+}
+
+.book-form button {
+    margin: 30px 0px !important;
+    max-width: max-content;
+    padding: 10px 25px !important;
+    border-bottom: 5px solid var(--fg) !important;
+    cursor: pointer;
+}
+
+.book-form select {
+    padding: 10px;
+    font-size: 15.5px;
+    font-family: var(--font-normal);
+}
+
+.book-form textarea {
+    max-width: calc( 100% - 30px );
+    padding: 15px;
+    resize: none;
+    font-size: 15.5px;
+}
